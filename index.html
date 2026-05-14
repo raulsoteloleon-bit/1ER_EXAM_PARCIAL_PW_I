@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I.E. N° 51006 Túpac Amaru</title>
+    <title>I.E. N° 51006 Túpac Amaru - Examen Parcial</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <header>
         <div class="logo-container">
-            <!-- Aquí simulamos el logo pequeño con una parte de la imagen o una imagen de logo si la tuvieras -->
             <img src="logo.jpg" alt="Logo I.E. Túpac Amaru" class="logo-small">
             <h1>I.E. N° 51006 "TÚPAC AMARU"</h1>
         </div>
@@ -18,17 +17,17 @@
 
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">¿Quiénes somos?</a></li>
-            <li><a href="#">Administración</a></li>
-            <li><a href="#">Secundaria</a></li>
-            <li><a href="#">Primaria</a></li>
-            <li><a href="#">Municipio Escolar</a></li>
+            <!-- Los href ahora tienen # seguido del ID de la sección -->
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+            <li><a href="#administracion">Administración</a></li>
+            <li><a href="#secundaria">Secundaria</a></li>
+            <li><a href="#primaria">Primaria</a></li>
+            <li><a href="#municipio">Municipio Escolar</a></li>
         </ul>
     </nav>
 
-    <!-- Foto Grande (Banner Principal) -->
-    <section class="hero">
+    <section class="hero" id="inicio">
         <figure>
             <img src="patio.jpg" alt="Patio principal de la institución" class="banner-img">
             <figcaption>Bienvenidos a nuestra comunidad educativa en Cusco</figcaption>
@@ -36,34 +35,53 @@
     </section>
 
     <main>
-        <section id="comunicados">
-            <h2>Últimos Comunicados</h2>
-            
-            <article>
-                <h3>Comunicado N° 028-2025</h3>
-                <p><time datetime="2025-09-25">25 de septiembre, 2025</time></p>
-                <p>Convocatoria a <mark>Asamblea de Padres de Familia</mark> para coordinaciones del año lectivo.</p>
-                <details>
-                    <summary>Ver detalles de la agenda</summary>
-                    <p>Lugar: Patio principal. Hora: 4:00 PM. Se tratarán temas de APAFA y mantenimiento escolar.</p>
-                </details>
+        <section id="informacion-institucional">
+            <!-- ID añadido para el botón "¿Quiénes somos?" -->
+            <article id="quienes-somos">
+                <h2>¿Quiénes Somos?</h2>
+                <p>La Institución Educativa Túpac Amaru de Cusco brinda una educación de calidad basada en valores, responsabilidad y disciplina, formando estudiantes preparados para el futuro.</p>
             </article>
 
             <article>
-                <h3>Aviso a la Comunidad</h3>
-                <p><time datetime="2026-04-10">10 de abril, 2026</time></p>
-                <p>Se comunica a los padres de familia sobre el nuevo horario de atención en administración.</p>
+                <h3>Nuestra Visión y Misión</h3>
+                <p><strong>VISIÓN:</strong> Ser una institución educativa con liderazgo, acogedora e integradora, comprometida con brindar una <mark>educación de calidad</mark> que priorice nuestra diversidad cultural y geográfica.</p>
+                <p><strong>MISIÓN:</strong> Tenemos el compromiso de la formación integral de cada estudiante: que se reconozca como persona valiosa, convive democráticamente y <mark>preserva el medio ambiente</mark>.</p>
+            </article>
+
+            <section class="niveles-educativos">
+                <!-- ID añadido para el botón "Primaria" -->
+                <article id="primaria">
+                    <h3>Primaria</h3>
+                    <p>El nivel primario desarrolla las capacidades básicas de los niños mediante actividades educativas, culturales y recreativas que fortalecen su aprendizaje.</p>
+                </article>
+
+                <!-- ID añadido para el botón "Secundaria" -->
+                <article id="secundaria">
+                    <h3>Secundaria</h3>
+                    <p>El nivel secundario prepara a los estudiantes académica y personalmente, fomentando la investigación, la creatividad y el liderazgo juvenil.</p>
+                </article>
+            </section>
+
+            <!-- ID añadido para el botón "Administración" -->
+            <article id="administracion">
+                <h2>Administración</h2>
+                <p>En esta sección se publican comunicados, actividades, concursos, aniversarios y logros obtenidos.</p>
+                <p>Publicado el: <time datetime="2026-05-14">14 de mayo, 2026</time></p>
+                
+                <details>
+                    <summary>Ver detalles sobre Administración</summary>
+                    <p>El área administrativa organiza y supervisa las actividades académicas y administrativas del colegio para garantizar una buena educación y atención a los estudiantes.</p>
+                </details>
             </article>
         </section>
 
-        <aside>
-            <h3>Enlaces Rápidos</h3>
-            <ul class="enlaces-aside">
-                <li><a href="#">Biblioteca Digital</a></li>
-                <li><a href="#">Trámite Documentario</a></li>
-                <li><a href="#">Actividades 2026</a></li>
-                <li><a href="#">Apafa</a></li>
-            </ul>
+        <!-- ID añadido para el botón "Municipio Escolar" -->
+        <aside id="municipio">
+            <h3>Municipio Escolar</h3>
+            <p>Promueve la participación de los estudiantes en actividades de liderazgo, convivencia y apoyo a la comunidad educativa.</p>
+            <hr>
+            <h3>Galería</h3>
+            <p>Aquí se muestran fotografías y videos de las diferentes actividades realizadas dentro y fuera de la institución educativa.</p>
         </aside>
     </main>
 
@@ -72,12 +90,11 @@
             <section>
                 <h4>Contacto</h4>
                 <p>📍 Calle Jerusalen s/n, Santiago, Cusco</p>
-                <p>📞 +1 123-456-7890</p>
+                <p>📞 +51 084 123456</p>
             </section>
             <section>
-                <h4>Soporte</h4>
-                <p>📧 info@ie51006tupacamaru.edu.pe</p>
-                <p>💻 soporteti@ie51006tupacamaru.edu.pe</p>
+                <h4>Información</h4>
+                <p>Puedes comunicarte mediante teléfono, correo electrónico o visitando nuestras instalaciones en Cusco.</p>
             </section>
         </div>
         <p class="copy">Copyright © 2026 I.E N.º 51006 Túpac Amaru</p>
